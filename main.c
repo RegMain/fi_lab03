@@ -25,10 +25,10 @@ int32_t find_sum_with_max(int32_t n, int32_t a[n][n]) {
   int32_t mx = INT32_MIN;
   int32_t answer = 0;
   int flag;
-  for (int32_t j = 0; j < n; ++j) {
+  for (int32_t i = 0; i < n; ++i) {
     current_sum = 0;
     flag = 0;
-    for (int32_t i = 0; i < n; ++i) {
+    for (int32_t j = 0; j < n; ++j) {
       current_sum += a[i][j];
       if (a[i][j] > mx) {
         mx = a[i][j];
